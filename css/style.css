@@ -29,23 +29,107 @@
   --color-dark-accent: #77735e;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('../assets/fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+html {
+  font-size: 18px;
+}
 
 body {
+  font-family: 'Roboto';
+
+  background-color: var(--color-light);
+  color: var(--color-dark);
 
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* body * {
+  border: 1px solid red;
+} */
+
+header {
+  background-color: #0a0a0a;
+  color: var(--color-brand);
+}
+
+header h3 {
+  font-family: 'Lemon Milk';
+}
+
+header h3 span {
+  font-size: .5em;
+  position: relative;
+  left: 40px;
+  bottom: 5px;
+}
+
+.hero {
+  /* background-color: var(--color-dark); */
+
+
+  /* AZTEC SNAKE FREE USE */
+  background-image: url('../assets/pictures/max-letek-vYFcHzLYpmU-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+
+
+  /* background-image: url('../assets/pictures/warrior.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+
+
+  color: var(--color-light);
+
+  height: calc(100vh);
+}
+
+h1 {
+  font-size: 2em;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 9999;
+
+
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
-footer {
+.hero {
 
+  padding-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
