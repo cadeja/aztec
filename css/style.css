@@ -51,6 +51,8 @@ body {
 
 }
 
+
+
 a {
   text-decoration: none;
   color: inherit;
@@ -76,6 +78,11 @@ header h3 span {
   bottom: 5px;
 }
 
+.header-call {
+  display: flex;
+  align-items: center;
+}
+
 .hero {
   /* background-color: var(--color-dark); */
 
@@ -99,6 +106,7 @@ header h3 span {
 }
 
 h1 {
+  font-family: 'Lemon Milk';
   font-size: 2em;
 }
 
@@ -124,12 +132,32 @@ h1 {
 
 .hero {
 
-  padding-top: 60px;
+  padding: 10%;
+  padding-top: 80px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.hero > div {
+  font-size: 1.2em;
+}
+
+.hero p {
+  margin-bottom: 10%;
+}
+
+.call-now {
+  font-size: 1.3em;
+  text-align: right;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+.phone-svg {
+  height: 25px;
+}
