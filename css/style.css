@@ -59,6 +59,19 @@ section {
   align-items: center;
 }
 
+h1 {
+  font-family: 'Lemon Milk';
+  font-size: 2em;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  color: var(--color-brand);
+}
+
+h1 strong {
+  font-size: 2.4em;
+}
+
 h2 {
   font-size: 1.8em;
 }
@@ -95,31 +108,46 @@ header h3 span {
 }
 
 .hero {
-  /* background-color: var(--color-dark); */
-
-
-  /* AZTEC SNAKE FREE USE */
-  background-image: url('../assets/pictures/max-letek-vYFcHzLYpmU-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-
-
-  /* background-image: url('../assets/pictures/warrior.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-
-
-
   color: var(--color-light);
 
   height: 100vh;
 }
 
-h1 {
-  font-family: 'Lemon Milk';
-  font-size: 2em;
+
+
+
+/* Hero background image and opacity styling */
+
+
+.hero-bg {
+
+  background-image: url('../assets/pictures/warrioralt.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(32, 8, 8, 0.5);
+
+  z-index: 0;
+}
+
+.hero > * {
+  z-index: 1;
+}
+
+
+
+
+
 
 /******************************************
 /* LAYOUT
@@ -148,23 +176,33 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  align-items: center;
 }
 
-.hero > div {
-  font-size: 1.2em;
+.hero * {
+  text-align: center;
 }
 
-.hero p {
-  margin-bottom: 10%;
+.hero > p {
+  padding: 10px;
+  color: var(--color-light-accent);
 }
 
 .call-now {
-  font-size: 1.3em;
-  text-align: right;
-  margin-bottom: 20px;
+  font-family: 'Lemon Milk';
+  font-size: 1.5em;
+  margin-top: 10%;
+  margin-bottom: 40px;
+
 }
 
+.call-now > div {
+  padding: 10px;
+  font-size: 1.3em;
+  color: #ff2929
+}
 
 
 /* REVIEWS */
