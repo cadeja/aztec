@@ -187,6 +187,7 @@ header h3 span {
 
 .hero > p {
   padding: 10px;
+  font-size: 1.2em;
   color: var(--color-light-accent);
 }
 
