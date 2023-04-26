@@ -312,6 +312,7 @@ h4 {
 .review p {
   text-align: center;
   line-height: 150%;
+  font-size: 1.1em;
 }
 
 .review h4 {
@@ -333,4 +334,17 @@ footer {
 
 .phone-svg {
   height: 25px;
+}
+
+.rating {
+  display: flex;
+
+  /* align-items: center;
+  justify-content: center; */
+
+  margin-bottom: 10px;
+}
+
+.rating > img {
+  height: 50px;
 }
