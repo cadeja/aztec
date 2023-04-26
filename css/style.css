@@ -24,10 +24,15 @@
 :root {
   --color-brand: #64c048;
   --color-light: #f5f1f4;
-  --color-light-accent: #94a69b;
+  --color-light-accent: #cdd8d2;
   --color-dark: #3c3a38;
   --color-dark-accent: #77735e;
 }
+
+/****************************/
+/*   FONTS AND FONT SIZES   */
+/****************************/
+
 
 @font-face {
   font-family: 'Roboto';
@@ -51,21 +56,28 @@ body {
 
 }
 
-section {
-  padding: 10%;
+p {
+  line-height: 140%;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+
+
+h1,
+h2,
+header h3,
+.call-now {
+  font-family: 'Lemon Milk';
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 h1 {
-  font-family: 'Lemon Milk';
   font-size: 2em;
-  text-align: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-  color: var(--color-brand);
 }
 
 h1 strong {
@@ -76,35 +88,46 @@ h2 {
   font-size: 1.8em;
 }
 
-
-a {
-  text-decoration: none;
-  color: inherit;
+header h3 span {
+  font-size: .5em;
 }
 
-/* body * {
-  border: 1px solid red;
-} */
+.call-now {
+  font-size: 1.5em;
+}
 
+.hero > p {
+  font-size: 1.2em;
+  line-height: 140%;
+}
+
+.call-now > div {
+  font-size: 1.3em;
+}
+
+
+.hero * {
+  text-align: center;
+}
+
+
+/** COLORS **/
+
+h1,
 header {
-  background-color: #0a0a0a;
   color: var(--color-brand);
 }
 
-header h3 {
-  font-family: 'Lemon Milk';
+.hero > p{
+  color: var(--color-light-accent);
 }
 
-header h3 span {
-  font-size: .5em;
-  position: relative;
-  left: 40px;
-  bottom: 5px;
+.call-now > div {
+  color: #ff2929;
 }
 
-.header-call {
-  display: flex;
-  align-items: center;
+header {
+  background-color: #0a0a0a;
 }
 
 .hero {
@@ -113,8 +136,14 @@ header h3 span {
   height: 100vh;
 }
 
+.about,
+.reviews {
+  background-color: var(--color-light-accent);
+}
 
-
+footer {
+  background-color: var(--color-dark);
+}
 
 /* Hero background image and opacity styling */
 
@@ -146,12 +175,30 @@ header h3 span {
 
 
 
+/** OTHER **/
 
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+h2 {
+  margin: 20px 0 20px 0;
+}
+
+section {
+  padding: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 .fixed-header {
   position: fixed;
@@ -169,6 +216,18 @@ header h3 span {
 
 }
 
+.header-call {
+  display: flex;
+  align-items: center;
+}
+
+header h3 span {
+  position: relative;
+  left: 40px;
+  bottom: 5px;
+}
+
+
 .hero {
 
   padding: 10%;
@@ -181,28 +240,59 @@ header h3 span {
   align-items: center;
 }
 
-.hero * {
-  text-align: center;
-}
 
-.hero > p {
+.hero > p,
+.call-now > div {
   padding: 10px;
-  font-size: 1.2em;
-  color: var(--color-light-accent);
 }
 
 .call-now {
-  font-family: 'Lemon Milk';
-  font-size: 1.5em;
   margin-top: 10%;
   margin-bottom: 40px;
-
 }
 
-.call-now > div {
+
+
+/* Services */
+
+
+h4 {
+  font-size: 1.2em;
+}
+
+.services > div {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--color-light-accent);
+
+
+
+  /* border: 2px solid var(--color-dark-accent); */
+  border-radius: 10px;
+  min-height: 250px;
+  width: 250px;
+
+  margin: 20px;
   padding: 10px;
-  font-size: 1.3em;
-  color: #ff2929
+}
+
+.service p {
+  text-align: center;
+}
+
+.service-svg {
+  width: 100px;
 }
 
 
@@ -213,11 +303,26 @@ header h3 span {
 
   display: flex;
   flex-direction: column;
-
   align-items: center;
+
+  /* border-radius: 10px;
+  background-color: var(--color-dark-accent); */
 }
 
 .review p {
+  text-align: center;
+  line-height: 150%;
+}
+
+.review h4 {
+  margin: 20px;
+}
+
+footer {
+  min-height: 100px;
+}
+
+.about p {
   text-align: center;
 }
 
