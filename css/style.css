@@ -63,10 +63,8 @@ p {
 
 hr {
   width: 20%;
-  height: 4px;
-  border-radius: 999px;
-  border: 0px;
-  background-color: var(--color-dark);
+  height: 1px;
+  background-color: var(--color-dark-accent);
 }
 
 
@@ -339,14 +337,47 @@ h4 {
 }
 
 footer {
-  min-height: 100px;
+  /* min-height: 100px; */
 
   font-size: .9em;
-  color: var(--color-dark-accent)
+  color: var(--color-dark-accent);
 }
 
 footer img {
   width: 20px;
+  margin: 3px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+.footer-left{
+  /* width: 50%; */
+  align-self: center;
+  padding: 10px;
+}
+
+footer .separator {
+  background-color: var(--color-dark-accent);
+  height: 50px;
+  width: 1px;
+}
+
+.footer-right {
+  /* width: 50%; */
+  padding: 10px;
+}
+
+.footer-right > div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
 }
 
 .about p {
