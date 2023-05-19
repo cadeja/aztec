@@ -405,3 +405,16 @@ footer .separator {
 .rating > img {
   height: 50px;
 }
+
+
+
+/* 
+@media screen and (min-width: 800px) {
+  .hero-bg {
+    background-image: none;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+} */
