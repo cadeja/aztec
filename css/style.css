@@ -46,6 +46,7 @@
 
 html {
   font-size: 16px;
+  background-color: var(--color-dark);
 }
 
 body {
@@ -155,25 +156,27 @@ footer {
 
 .hero-bg {
 
-  background-image: url('../assets/pictures/warrioralt.png');
+  background-image: url('../assets/pictures/warrioraltreddish.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
 }
 
-.hero-bg::before {
+/* .hero-bg::before {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  color: #200808
   background-color: rgba(32, 8, 8, 0.5);
 
   z-index: 0;
-}
+} */
 
+rgb(32,8,8)
 .hero > * {
   z-index: 1;
 }
@@ -348,17 +351,34 @@ footer img {
   margin: 3px;
 }
 
-footer .container {
-  display: flex;
-  justify-content: space-between;
+.footer-grid {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  justify-content: center;
   align-items: center;
-
 }
 
+.footer-left {
+  justify-self: center;
+}
 
+/* .footer-left {
+  grid-column-start: 2;
+}
+
+.footer-right {
+  grid-column-start: 3;
+} */
+
+/* footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-left{
-  /* width: 50%; */
   align-self: center;
   padding: 10px;
 }
@@ -370,10 +390,9 @@ footer .separator {
 }
 
 .footer-right {
-  /* width: 50%; */
   padding: 10px;
 }
-
+*/
 .footer-right > div {
   display: flex;
   align-items: center;
@@ -406,15 +425,62 @@ footer .separator {
   height: 50px;
 }
 
+p {
+  max-width: 600px;
+}
 
-
-/* 
 @media screen and (min-width: 800px) {
+
+  section {
+    padding: 80px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
   .hero-bg {
     background-image: none;
+    background-color: #12080c;
+  }
+
+  .hero-outer {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
   }
 
   .hero {
-    flex-direction: row;
+    width: 50%;
+    height: 600px;
+
+    justify-content: center;
+    padding: 0;
+    padding-top: 100px;
   }
-} */
+
+  .hero > * {
+    max-width: 300px;
+  }
+
+  .hero-image {
+    height: 600px;
+  }
+
+  .logo {
+    padding-left: 100px;
+  }
+
+  .header-call {
+    padding-right: 100px;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .hero-image {
+    display: none;
+  }
+
+  
+}
