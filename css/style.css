@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -33,15 +33,14 @@
 /*   FONTS AND FONT SIZES   */
 /****************************/
 
-
 @font-face {
-  font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Lemon Milk';
-  src: url('../assets/fonts/lemon_milk/LEMONMILK-Regular.otf');
+  font-family: "Lemon Milk";
+  src: url("../assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
 }
 
 html {
@@ -50,17 +49,15 @@ html {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
   background-color: var(--color-light);
   color: var(--color-dark);
-
 }
 
 p {
   line-height: 140%;
 }
-
 
 hr {
   width: 20%;
@@ -68,12 +65,11 @@ hr {
   background-color: var(--color-dark-accent);
 }
 
-
 h1,
 h2,
 header h3,
 .call-now {
-  font-family: 'Lemon Milk';
+  font-family: "Lemon Milk";
 }
 
 h1,
@@ -95,7 +91,7 @@ h2 {
 }
 
 header h3 span {
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 .call-now {
@@ -111,11 +107,9 @@ header h3 span {
   font-size: 1.3em;
 }
 
-
 .hero * {
   text-align: center;
 }
-
 
 /** COLORS **/
 
@@ -124,7 +118,7 @@ header {
   color: var(--color-brand);
 }
 
-.hero > p{
+.hero > p {
   color: var(--color-light-accent);
 }
 
@@ -153,14 +147,11 @@ footer {
 
 /* Hero background image and opacity styling */
 
-
 .hero-bg {
-
-  background-image: url('../assets/pictures/warrioraltreddish.png');
+  background-image: url("../assets/pictures/warrioraltreddish.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 /* .hero-bg::before {
@@ -175,12 +166,9 @@ footer {
 
   z-index: 0;
 } */
-
-rgb(32,8,8)
 .hero > * {
   z-index: 1;
 }
-
 
 .about img {
   border-radius: 10px;
@@ -190,7 +178,6 @@ rgb(32,8,8)
 
   margin: 20px;
 }
-
 
 /** OTHER **/
 
@@ -215,8 +202,6 @@ section {
   align-items: center;
 }
 
-
-
 .fixed-header {
   position: fixed;
   top: 0;
@@ -225,12 +210,10 @@ section {
   width: 100%;
   z-index: 9999;
 
-
   padding: 0 20px 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .header-call {
@@ -244,9 +227,7 @@ header h3 span {
   bottom: 5px;
 }
 
-
 .hero {
-
   padding: 10%;
   padding-top: 80px;
 
@@ -256,7 +237,6 @@ header h3 span {
 
   align-items: center;
 }
-
 
 .hero > p,
 .call-now > div {
@@ -268,10 +248,7 @@ header h3 span {
   margin-bottom: 40px;
 }
 
-
-
 /* Services */
-
 
 h4 {
   font-size: 1.2em;
@@ -286,14 +263,11 @@ h4 {
 }
 
 .service {
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-color: var(--color-light-accent);
-
-
 
   /* border: 2px solid var(--color-dark-accent); */
   border-radius: 10px;
@@ -314,8 +288,8 @@ h4 {
 
 .service-svg {
   width: 80px;
+  height: 80px;
 }
-
 
 /* REVIEWS */
 
@@ -342,19 +316,20 @@ h4 {
 footer {
   /* min-height: 100px; */
 
-  font-size: .9em;
+  font-size: 0.9em;
   color: var(--color-dark-accent);
 }
 
 footer img {
   width: 20px;
+  height: 20px;
   margin: 3px;
 }
 
 .footer-grid {
   padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
@@ -407,9 +382,9 @@ footer .separator {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-
 .phone-svg {
   height: 25px;
+  width: 25px;
 }
 
 .rating {
@@ -423,6 +398,7 @@ footer .separator {
 
 .rating > img {
   height: 50px;
+  width: 50px;
 }
 
 p {
@@ -430,7 +406,6 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-
   section {
     padding: 80px;
   }
@@ -474,13 +449,10 @@ p {
   .header-call {
     padding-right: 100px;
   }
-
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .hero-image {
     display: none;
   }
-
-  
 }
