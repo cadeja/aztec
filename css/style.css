@@ -148,7 +148,7 @@ footer {
 /* Hero background image and opacity styling */
 
 .hero-bg {
-  background-image: url("../assets/pictures/warrioraltreddish.png");
+  background-image: url("../assets/pictures/warrioraltreddishcompressed.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,7 +435,7 @@ p {
   }
 
   .hero > * {
-    max-width: 300px;
+    max-width: 350px;
   }
 
   .hero-image {
